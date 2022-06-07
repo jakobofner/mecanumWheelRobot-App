@@ -197,27 +197,6 @@ namespace mecanumWheelRobot.Views
             System.Diagnostics.Debug.WriteLine(result);
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            service.toast.toastSuccess(JoystickControlElement().Xposition.ToString());
-        }
-
-        /*private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
-        {
-            var newStep = Math.Round(e.NewValue / 1);
-            slider.Value = newStep * 1;
-            lblText.Text = slider.Value.ToString();
-            lblText.TranslateTo(slider.Value * ((slider.Width - 40) / slider.Maximum), 0, 1);
-        }*/
-
-        public CustomControls.JoystickControl JoystickControlElement()
-        {
-            return JoystickControl;
-        }
-        public CustomControls.JoystickControl JoystickControlElement1()
-        {
-            return JoystickControl1; 
-        }
 
         
     }
