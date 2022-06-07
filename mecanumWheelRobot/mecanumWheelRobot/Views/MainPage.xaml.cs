@@ -156,7 +156,7 @@ namespace mecanumWheelRobot.Views
             }
             else
             {
-                if (JoystickControl.Xposition > 0) //forward moving
+                if (JoystickControl.Xposition > 0) //turning left
                 {
                     speedLF = Math.Abs(JoystickControl.Xposition);
                     speedLB = Math.Abs(JoystickControl.Xposition);
@@ -168,7 +168,7 @@ namespace mecanumWheelRobot.Views
                     dirRB = 0;
                     dirRF = 0;
                 }
-                else
+                else                            //turning right
                 {
                     speedLF = Math.Abs(JoystickControl.Xposition);
                     speedLB = Math.Abs(JoystickControl.Xposition);
